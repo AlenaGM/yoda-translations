@@ -6,40 +6,35 @@ document.querySelector('#text').addEventListener('change', function(){
     fetch("https://api.funtranslations.com/translate/yoda.json?text="+text)
     .then(response => response.json())
     .then(translation => {
-        document.querySelector("#translateYoda").value = translation.contents.translated;
+        document.querySelector("#translatedYoda").innerHTML = translation.contents.translated;
         console.log(translation.contents.translated);
     })
     .catch(error => console.log(error));
-});
 
-
-/*
-document.querySelector('#translate').addEventListener('click', function(){
-    translateYoda(text);
-    //translateMinion(text);
-});
-
-
-
-function translateYoda(text){
-    fetch("https://api.funtranslations.com/translate/yoda.json?text="+text)
-    .then(response => response.json())
-    .then(translation => {
-
-        console.log(translation.contents.translated);
-    })
-    .catch(error => console.log(error));
-};
-document.querySelector('#reset').addEventListener('click', function(){
-    location.reload();
-});
-/*
-function translateMinion(){
     fetch("https://api.funtranslations.com/translate/minion.json?text="+text)
     .then(response => response.json())
     .then(translation => {
-        document.querySelector("#translateMinion").value = translation.contents.translated;
+        document.querySelector("#translatedMinion").innerHTML = translation.contents.translated;
         console.log(translation.contents.translated);
     })
     .catch(error => console.log(error));
-};*/
+});
+
+document.querySelector('#reset').addEventListener('click', function(){
+    location.reload();
+});
+
+
+/*
+http://hp-api.herokuapp.com/api/characters/house/gryffindor
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch("http://hp-api.herokuapp.com/api/characters/house/gryffindor")
+    .then(response => response.json())
+    .then(test => {
+
+        console.log(test[0].name);
+        document.querySelector("#translateMinion").value = test[0].name;
+    })
+    .catch(error => console.log(error));
+});*/
