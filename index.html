@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Сюда шрифты =swap&subset=cyrillic-ext-->
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/img/yoda-icon.png" type="img/png">
+    <title>Yoda Translation</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div>
+                <label for="text">English:</label>
+                <input id="text" type="text" name="englishText" class="input__text" value=""></input>
+            </div>
+            <div>
+                <div>
+                    <img src="assets/img/yoda-three.png" alt="baby Yoda" class="image">
+                </div>
+                <label for="translatedYoda">Yodish:</label>
+                <input id="translatedYoda" type="text" name="englishText" class="input__text" value=""></input>
+            </div>
+            <div>
+                <div>
+                    <img src="assets/img/minion.png" alt="minion" class="image">
+                </div>
+                <label for="translatedMinion">Minion:</label>
+                <input id="translatedMinion"  type="text" name="englishText" class="input__text" value=""></input>
+            </div>
+            <div>
+                <button id="translate" type="submit" class="button">Translate</button>
+                <button id="reset" type="reset" class="button">Reset</button>
+            </div>
+
+
+        </main>
+        <div class="footer"></div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
