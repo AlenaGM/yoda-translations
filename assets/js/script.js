@@ -24,17 +24,3 @@ document.querySelector('#reset').addEventListener('click', function(){
     location.reload();
 });
 
-
-/*
-http://hp-api.herokuapp.com/api/characters/house/gryffindor
-
-document.addEventListener('DOMContentLoaded', () => {
-    fetch("http://hp-api.herokuapp.com/api/characters/house/gryffindor")
-    .then(response => response.json())
-    .then(test => {
-
-        console.log(test[0].name);
-        document.querySelector("#translateMinion").value = test[0].name;
-    })
-    .catch(error => console.log(error));
-});*/
