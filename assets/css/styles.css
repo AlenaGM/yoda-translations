@@ -87,6 +87,7 @@ h1 {
     top: 0;
     background-color: #3A75C4;
     margin: 40px 0px;
+    outline: none;
 }
 
 .button:active {
