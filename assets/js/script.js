@@ -10,10 +10,8 @@ document.querySelector('#text').addEventListener('change', function(){
         console.log(translation.contents.translated);
     })
     .catch(error => {
-        console.log(error);
         console.log(error.name);
         console.log(error.message);
-        console.log(error.stack);
     });
 
 /*
@@ -22,13 +20,10 @@ document.querySelector('#text').addEventListener('change', function(){
     .then(translation => {
         document.querySelector("#translatedMinion").innerHTML = translation.contents.translated;
         console.log(translation.contents.translated);
-        throw error;
     })
     .catch(error => {
-        console.log(error);
         console.log(error.name);
         console.log(error.message);
-        console.log(error.stack);
     });
 
 });*/
