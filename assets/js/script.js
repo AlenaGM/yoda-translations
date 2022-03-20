@@ -36,7 +36,7 @@ document.querySelector('#text').addEventListener('change', function(){
 
 //ЛОВИМ ОШИБКИ
 //ПРОБЛЕМА: превышен максимум запросов на этот час (можно 5)
-//ПРОБЛЕМА: язык запроса не английский (внешне все работает, по значение поля ввода и полей переводов идентичны
+//ПРОБЛЕМА: язык запроса не английский (внешне все работает, по значение поля ввода и полей переводов идентичны)
 
 document.querySelector('#text').addEventListener('change', function(){
 
@@ -48,8 +48,8 @@ document.querySelector('#text').addEventListener('change', function(){
         try {
             const response = await fetch("https://api.funtranslations.com/translate/yoda.json?text="+text);
 
-        if (!response.ok)
-            throw new Error(`Can't translate into Yoda: too  many requests! Only 5 translations allowed per hour. Please, try later`);
+            if (!response.ok)
+                throw new Error(`Can't translate into Yoda: too  many requests! Only 5 translations allowed per hour. Please, try later`);
 
         const translation = await response.json();
 
@@ -60,7 +60,7 @@ document.querySelector('#text').addEventListener('change', function(){
         console.log(translation.contents.translated);
 
         } catch (error) {
-        alert(error + `!`);
+            alert(error + `!`);
         }
 
     }
@@ -71,7 +71,7 @@ document.querySelector('#text').addEventListener('change', function(){
             const response = await fetch("https://api.funtranslations.com/translate/minion.json?text="+text);
 
             if (!response.ok)
-            throw new Error(`Can't translate into Minion: too many requests! Only 5 translations allowed per hour. Please, try later`);
+                throw new Error(`Can't translate into Minion: too many requests! Only 5 translations allowed per hour. Please, try later`);
 
         const translation = await response.json();
 
@@ -82,7 +82,7 @@ document.querySelector('#text').addEventListener('change', function(){
         console.log(translation.contents.translated);
 
         } catch (error) {
-        alert(error + `!`);
+            alert(error + `!`);
         }
 
     }
