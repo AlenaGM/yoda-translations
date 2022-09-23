@@ -1,7 +1,7 @@
 # Yoda-Translations
-<img width="30px" alt="screen capture" src="../main/assets/img/baby-yoda.gif"> _Translation from English into Yoda and from English into Minion using Yoda translator API._
+<img width="30px" alt="screen capture" src="../main/assets/img/baby-yoda.gif"> _Translation from English into Yodish & Minion_ <img width="25px" alt="screen capture" src="../main/assets/img/ugh_minion.png">
 
-Simple site using JavaScript Fetch API to get data provided by NASA's Astronomy Picture of the Day Project 
+Simple site using JavaScript Fetch API to get data provided by [FunTranslations API]. <br>Twin of [Astronomy-Picture] project made while learning Fetch API with [ITGirlSchool].
 <br><br>
 
 ## Demo
@@ -18,8 +18,11 @@ Simple site using JavaScript Fetch API to get data provided by NASA's Astronomy 
 
 <br><br> 
 \* _Week 20 Training Project in [ITGirlSchool]_ 
+<br>
+\* _Twin of more serious [Astronomy-Picture] Project_ 
   
 
    [ITGirlSchool]: <https://itgirlschool.com/en>
    [Yoda-Translations]: <https://alenagm.github.io/Yoda-Translations/>
-   [Astronomy-Picture]: <https://alenagm.github.io/Astronomy-Picture/>
+   [Astronomy-Picture]: <https://github.com/AlenaGM/Astronomy-Picture>
+   [FunTranslations API]:<https://api.funtranslations.com/>
