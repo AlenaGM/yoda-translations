@@ -2,7 +2,7 @@
 <img width="30px" alt="screen capture" src="../main/assets/img/baby-yoda.gif"> _Translation from English into Yodish & Minion_ <img width="25px" alt="screen capture" src="../main/assets/img/ugh_minion.png">
 
 Simple site using JavaScript Fetch API to get data provided by [FunTranslations API]. <br>Twin of [Astronomy-Picture] project made while learning Fetch API with [ITGirlSchool].
-<br><br>
+<br><br> 
 
 ## Demo
 [Yoda-Translations]
