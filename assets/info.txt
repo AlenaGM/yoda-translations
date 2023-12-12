@@ -3,5 +3,17 @@
 #8D948D - серо-зеленый
 #9F8170 - бобровый
 
-Сделать:
-Добавить try catch
+.translation__item {
+}
+.translation__label {
+}
+.translation__text {
+}
+.button {
+}
+.translation__img {
+}
+.image {
+}
+
+Didact Gothic', sans-serif

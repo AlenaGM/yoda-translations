@@ -1,6 +1,10 @@
-document.querySelector("#text").addEventListener("change", function () {
-  let text = document.querySelector("#text").value.split(" ").join("%20");
-  console.log(text);
+document.querySelector("#submit").addEventListener("click", function () {
+  let text = document
+    .querySelector("#sourceText")
+    .value.trim()
+    .split(" ")
+    .join("%20")
+    .toLowerCase();
 
   const translateYoda = async () => {
     try {
@@ -10,54 +14,28 @@ document.querySelector("#text").addEventListener("change", function () {
 
       if (!response.ok)
         throw new Error(
-          `Can't translate into Yoda: too  many requests! Only 5 translations allowed per hour. Please, try later`
+          `Wrong, something went. Again in 60 minutes, try, please`
         );
 
       const translation = await response.json();
 
       if (
-        document.querySelector("#text").value == translation.contents.translated
+        document.querySelector("#sourceText").value ==
+        translation.contents.translated
       )
-        throw new Error(`Please, type in English.`);
+        throw new Error(`Please, type in Galactic Basic Standard`);
 
-      document.querySelector("#translatedYoda").innerHTML =
+      document.querySelector("#textTarget").innerHTML =
         translation.contents.translated;
-      console.log(translation.contents.translated);
     } catch (error) {
-      alert(error + `!`);
-    }
-  };
-
-  const translateMinion = async () => {
-    try {
-      const response = await fetch(
-        "https://api.funtranslations.com/translate/minion.json?text=" + text
-      );
-
-      if (!response.ok)
-        throw new Error(
-          `Can't translate into Minion: too many requests! Only 5 translations allowed per hour. Please, try later`
-        );
-
-      const translation = await response.json();
-
-      if (
-        document.querySelector("#text").value == translation.contents.translated
-      )
-        throw new Error(`Non-English phrases are not translated`);
-
-      document.querySelector("#translatedMinion").innerHTML =
-        translation.contents.translated;
-      console.log(translation.contents.translated);
-    } catch (error) {
-      alert(error + `!`);
+      alert(error);
     }
   };
 
   translateYoda();
-  translateMinion();
 });
 
 document.querySelector("#reset").addEventListener("click", function () {
-  location.reload();
+  document.querySelector("#sourceText").value = "";
+  document.querySelector("#textTarget").innerHTML = "";
 });
