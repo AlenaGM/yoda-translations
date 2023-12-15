@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="assets/js/script.js" defer></script>
     <script src="assets/libs/rain.js" defer></script>
-    <link rel="shortcut icon" href="assets/img/yoda-icon.png" type="img/png" />
-    <title>Yoda <span>Translation</span></title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    <title>Yoda Translation</title>
   </head>
   <body>
     <main class="layers">
@@ -27,10 +31,9 @@
           style="background-image: url(assets/img/baby-yoda.svg)"
         ></div>
         <div class="layers__item layer-3 translation">
-
             <h1 class="translation__title">Yoda Translations</h1>
             <div class="translation__item">
-              <label class="translation__label hero-content__p" for="sourceText"
+              <label class="translation__label" for="sourceText"
                 >Type something in English:</label
               >
               <input
@@ -46,8 +49,8 @@
               <div class="translation__text" id="textTarget"></div>
             </div>
             <div class="translation__buttons">
-              <button id="submit" class="button">Reset</button>
-              <button id="reset" type="reset" class="button">Translate</button>
+              <button id="reset" class="button">Reset</button>
+              <button id="submit" type="reset" class="button">Translate</button>
             </div>
         </div>
         <div class="layers__item layer-4">
