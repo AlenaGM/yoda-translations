@@ -4,38 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/normalize.css" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/libs/rain.js" defer></script>
     <link rel="shortcut icon" href="assets/img/yoda-icon.png" type="img/png" />
-    <title>Yoda Translation</title>
+    <title>Yoda <span>Translation</span></title>
   </head>
   <body>
-    <main class="main">
-      <h1>Yoda Translations</h1>
-      <div class="translation__wrapper">
-        <div class="translation__item">
-          <label class="translation__label" for="sourceText"
-            >Type something in English:</label
-          >
-          <input
-            type="text"
-            id="sourceText"
-            name="sourceText"
-            class="translation__text"
-            value=""
-          />
-          <button id="submit" class="button">Translate</button>
+    <main class="layers">
+      <div class="layers__container">
+        <div
+          class="layers__item layer-1"
+          style="background-image: url(assets/img/layer-1.jpg)"
+        ></div>
+        <div
+          class="layers__item layer-2"
+          style="background-image: url(assets/img/layer-2.png)"
+        ></div>
+        <div
+          class="logo"
+          style="background-image: url(assets/img/baby-yoda.svg)"
+        ></div>
+        <div class="layers__item layer-3 translation">
+
+            <h1 class="translation__title">Yoda Translations</h1>
+            <div class="translation__item">
+              <label class="translation__label hero-content__p" for="sourceText"
+                >Type something in English:</label
+              >
+              <input
+                type="text"
+                id="sourceText"
+                name="sourceText"
+                class="translation__text"
+                value=""
+              />
+            </div>
+            <div class="translation__item">
+              <div class="translation__label hero-content__p" for="textTarget">Yodish:</div>
+              <div class="translation__text" id="textTarget"></div>
+            </div>
+            <div class="translation__buttons">
+              <button id="submit" class="button">Reset</button>
+              <button id="reset" type="reset" class="button">Translate</button>
+            </div>
         </div>
-        <div class="translation__item">
-          <div class="translation__img">
-            <img src="assets/img/babyyoda.webp" alt="baby Yoda" />
-          </div>
-          <div class="translation__label" for="textTarget">Yodish:</div>
-          <div class="translation__text" id="textTarget"></div>
-          <button id="reset" type="reset" class="button">Reset</button>
+        <div class="layers__item layer-4">
+          <canvas class="rain"></canvas>
         </div>
-      </div>
-    </main>
-    <script src="assets/js/script.js"></script>
+        <div
+          class="layers__item layer-5"
+          style="background-image: url(assets/img/layer-5.png)"
+        ></div>
+        <div
+          class="layers__item layer-6"
+          style="background-image: url(assets/img/layer-6.png)"
+        ></div>
+      </main>
+    </div>
   </body>
 </html>

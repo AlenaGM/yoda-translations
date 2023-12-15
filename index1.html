@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="shortcut icon" href="assets/img/yoda-icon.png" type="img/png" />
+    <title>Yoda Translation</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1>Yoda Translations</h1>
+      <div class="translation__wrapper">
+        <div class="translation__item">
+          <label class="translation__label" for="sourceText"
+            >Type something in English:</label
+          >
+          <input
+            type="text"
+            id="sourceText"
+            name="sourceText"
+            class="translation__text"
+            value=""
+          />
+          <button id="submit" class="button">Translate</button>
+        </div>
+        <div class="translation__item">
+          <div class="translation__img">
+            <img src="assets/img/babyyoda.webp" alt="baby Yoda" />
+          </div>
+          <div class="translation__label" for="textTarget">Yodish:</div>
+          <div class="translation__text" id="textTarget"></div>
+          <button id="reset" type="reset" class="button">Reset</button>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
