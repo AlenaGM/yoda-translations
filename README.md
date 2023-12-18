@@ -1,4 +1,4 @@
-# Yoda-Translations <img width="42px" alt="screen capture" src="../main/assets/img/baby-yoda.png"> 
+# Yoda Translations <img width="42px" alt="screen capture" src="../main/assets/img/baby-yoda.png"> 
 _Translation from English to Yodish_ 
 
 This is a simple interface that utilizes the JavaScript Fetch API to retrieve translations from the [FunTranslations API].<br>It is a sister project to the [Astronomy Picture] and was developed while learning Fetch API with [ITGirlSchool].
