@@ -1,4 +1,4 @@
-document.addEventListener("mousemove", (e) => {
+document.addEventListener("pointermove", (e) => {
   Object.assign(document.documentElement, {
     style: `
 		--move-x: ${(e.clientX - window.innerWidth / 2) * -0.005}deg;
